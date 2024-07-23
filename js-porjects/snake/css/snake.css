@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Press Start 2P", system-ui;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #E2F2CD;
+}
+
+.hidden {
+    display: none;
+}
+
+.wrapper {
+    position: relative;
+    width: 75vmin;
+    height: 80vmin;
+    border-radius: 5px;
+    background-color: #2C4C7A;
+    overflow: hidden;
+}
+
+.game-details {
+    color: #E2F2CD;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 2vh 3vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.play-board {
+    width: 100%;
+    height: 92%;
+    border-radius: 5px;
+    display: grid;
+    grid-template: repeat(35, 1fr) / repeat(35, 1fr);
+    background-color: #1A2A64;
+    overflow: hidden;
+}
+
+.play-board .food {
+    background-color: #ff003d;
+}
+
+.play-board .head {
+    background-color: #60cbff;
+}
+
+.game-over {
+    width: 85vmin;
+    height: 60vmin;
+    color: #2C4C7A;
+    text-align: center;
+}
+
+.game-over h1 {
+    font-size: 3rem;
+    line-height: 2;
+}
+
+.game-over button {
+    margin-top: 5vh;
+    line-height: 2;
+    width: 10vw;
+    text-align: center;
+    cursor: pointer;
+    color: #2C4C7A;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .wrapper {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        border-radius: 5px;
+        background-color: #2C4C7A;
+    }
+
+    .game-details {
+        margin: 2.5vh;
+        height: 10vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .play-board {
+        width: 100%;
+        height: 70%;
+        border-radius: 5px;
+        display: grid;
+        grid-template: repeat(35, 1fr) / repeat(35, 1fr);
+        background-color: #1A2A64;
+        overflow: hidden;
+    }
+
+    .controls {
+        margin-top: 2vh;
+        height: 10vh;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .controls i {
+        height: 100%;
+        cursor: pointer;
+        color: #e2f2cd;
+        font-size: 2rem;
+        padding: 3vh 3vh;
+        text-align: center;
+        width: calc(100%/4);
+        border-right: 1px solid #e2f2cd;
+    }
+}

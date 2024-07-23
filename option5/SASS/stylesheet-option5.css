@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #E5EEFF;
+}
+body #super-container {
+  width: 60vw;
+  margin: 20vh 20vw;
+  direction: rtl;
+  display: grid;
+  grid-template-areas: "ad ad i1 i2" "ad ad i3 i4" "i8 i7 i6 i5" "i9 i10 form form" "i11 i12 form form" "i13 i14 form form";
+  gap: 1.5vw;
+}
+body #super-container #ad-container {
+  background-color: #020253;
+  grid-area: ad;
+  padding-top: 20vh;
+}
+body #super-container #ad-container h1 {
+  color: #0EE1DA;
+  font: normal normal bold 3.8rem Assistant;
+  text-align: center;
+}
+body #super-container #ad-container h4 {
+  color: #F9F9F9;
+  font: normal normal normal 1.25rem Assistant;
+  text-align: center;
+}
+body #super-container .img-container {
+  width: 15vw;
+  height: 14vw;
+}
+body #super-container .img-container img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body #super-container .i-1 {
+  grid-area: i1;
+}
+body #super-container .i-2 {
+  grid-area: i2;
+}
+body #super-container .i-3 {
+  grid-area: i3;
+}
+body #super-container .i-4 {
+  grid-area: i4;
+}
+body #super-container .i-5 {
+  grid-area: i5;
+}
+body #super-container .i-6 {
+  grid-area: i6;
+}
+body #super-container .i-7 {
+  grid-area: i7;
+}
+body #super-container .i-8 {
+  grid-area: i8;
+}
+body #super-container #forme {
+  grid-area: form;
+}
+body #super-container .i-9 {
+  grid-area: i9;
+}
+body #super-container .i-10 {
+  grid-area: i10;
+}
+body #super-container .i-11 {
+  grid-area: i11;
+}
+body #super-container .i-12 {
+  grid-area: i12;
+}
+body #super-container .i-13 {
+  grid-area: i13;
+}
+body #super-container .i-14 {
+  grid-area: i14;
+}
+
+#forme {
+  grid-column: 3/5;
+  grid-row: 4/7;
+  background-color: #8E097C;
+  margin-left: -0.325vw;
+  height: 45vw;
+}
+#forme h3 {
+  font: normal normal bold 2.2rem Assistant;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 8vh;
+}
+#forme h4 {
+  font: normal normal normal 1.25rem Assistant;
+  color: #F9F9F9;
+  text-align: center;
+  padding: 2vh 5vw;
+}
+#forme #form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  direction: rtl;
+  justify-content: center;
+  margin: 3vh auto;
+  align-items: flex-end;
+}
+#forme #form .form-control {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 2vh;
+}
+#forme #form .form-control label {
+  font: normal normal bold 1rem Heebo;
+  color: #0EE1DA;
+  padding-bottom: 1vh;
+}
+#forme #form .form-control input[type=text],
+#forme #form .form-control input[type=email] {
+  background-color: #E5EEFF;
+  border: 0;
+  border-bottom: 0.25rem solid #0EE1DA;
+  width: 25.5vw;
+  line-height: 3;
+}
+#forme #form .form-control #story {
+  line-height: 10;
+}
+#forme #form .form-control input[type=submit] {
+  font: normal normal bold 1.5rem Heebo;
+  letter-spacing: 0.023rem;
+  background-color: #0EE1DA;
+  color: #011560;
+  line-height: 2;
+  border: 0;
+  width: 25.5vw;
+  margin-top: 1vh;
+}
+
+@media (max-width: 576px) {
+  * {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+  }
+  #super-container {
+    width: 100vw !important;
+    margin: 0 0 10vh !important;
+    display: grid;
+    grid-template-areas: "ad ad" "ad ad" "i2 i1" "i4 i3" "i6 i5" "i8 i7" "form form" "form form" "form form" "i10 i9" "i12 i11" "i14 i13" !important;
+    gap: 0 !important;
+  }
+  #super-container #ad-container {
+    grid-area: ad;
+    height: 90vw !important;
+    margin: 0 0 !important;
+  }
+  #super-container #ad-container h1 {
+    font: normal normal bold 2.8rem Assistant !important;
+    padding: 15vh 2vw 4vh 2vw !important;
+  }
+  #super-container .img-container {
+    width: 39vw !important;
+    height: 38vw !important;
+    margin-top: 2vh !important;
+  }
+  #super-container .img-container img {
+    width: 100%;
+  }
+  #super-container .i-1 {
+    grid-area: i1;
+  }
+  #super-container .i-2 {
+    grid-area: i2;
+  }
+  #super-container .i-3 {
+    grid-area: i3;
+  }
+  #super-container .i-4 {
+    grid-area: i4;
+  }
+  #super-container .i-5 {
+    grid-area: i5;
+  }
+  #super-container .i-6 {
+    grid-area: i6;
+  }
+  #super-container .i-7 {
+    grid-area: i7;
+  }
+  #super-container .i-8 {
+    grid-area: i8;
+  }
+  #super-container #forme {
+    grid-area: form;
+    height: 136vw;
+    width: 85.5vw;
+    margin-right: 6.1vw !important;
+    margin-top: 2vh !important;
+  }
+  #super-container #forme h3 {
+    text-align: center !important;
+    padding: 4vw 5vw 2vw !important;
+    font: normal normal bold 1.8rem Assistant;
+  }
+  #super-container #forme h4 {
+    padding-bottom: 2vh !important;
+    padding-right: 2vw !important;
+    width: 95%;
+  }
+  #super-container #forme #form {
+    padding-right: 4vw !important;
+    width: 95%;
+    display: block;
+  }
+  #super-container #forme #form input {
+    width: 100%;
+  }
+  #super-container #forme #form input[type=submit] {
+    margin-top: 1.5rem !important;
+  }
+  #super-container .i-9 {
+    grid-area: i9;
+  }
+  #super-container .i-10 {
+    grid-area: i10;
+  }
+  #super-container .i-11 {
+    grid-area: i11;
+  }
+  #super-container .i-12 {
+    grid-area: i12;
+  }
+  #super-container .i-13 {
+    grid-area: i13;
+  }
+  #super-container .i-14 {
+    grid-area: i14;
+  }
+  #super-container .odd {
+    margin-left: 0.5vh !important;
+  }
+  #super-container .even {
+    margin-right: 3.5vh !important;
+  }
+}/*# sourceMappingURL=stylesheet-option5.css.map */

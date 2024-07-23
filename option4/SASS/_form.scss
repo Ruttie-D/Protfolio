@@ -1,0 +1,40 @@
+#form {
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    direction: rtl;
+    justify-content: center;
+    margin: 6vh auto;
+    align-items: flex-end;
+    justify-content: space-around;
+
+    .form-control {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            font: $labelText;
+            color: $labelColor;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            background-color: $inputBgc;
+            border: 0;
+            border-bottom: 0.25rem solid $dirtyYellow;
+            width: 20rem;
+            line-height: 3;
+        }
+
+        input[type="submit"] {
+            font: $btnText;
+            letter-spacing: $btnLetterSpacing;
+            background-color: $dirtyYellow;
+            color: $labelColor;
+            line-height: 2;
+            border: 0;
+            width: 7rem;
+            margin-top: 2vh;
+        }
+    }
+}

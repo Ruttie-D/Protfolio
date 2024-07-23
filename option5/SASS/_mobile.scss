@@ -1,0 +1,150 @@
+@media (max-width: 576px) {
+    * {
+        margin: 0 !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    #super-container {
+        width: 100vw !important;
+        margin: 0 0 10vh !important;
+
+        display: grid;
+        grid-template-areas:
+            "ad ad"
+            "ad ad"
+            "i2 i1"
+            "i4 i3"
+            "i6 i5"
+            "i8 i7"
+            "form form"
+            "form form"
+            "form form"
+            "i10 i9"
+            "i12 i11"
+            "i14 i13"
+            !important;
+        gap: 0 !important;
+
+        #ad-container {
+            grid-area: ad;
+            height: 90vw !important;
+            margin: 0 0 !important;
+
+            h1 {
+                font: $h1TextMobile !important;
+                padding: 15vh 2vw 4vh 2vw !important;
+            }
+
+        }
+
+        .img-container {
+            width: 39vw !important;
+            height: 38vw !important;
+            margin-top: 2vh !important;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .i-1 {
+            grid-area: i1;
+        }
+
+        .i-2 {
+            grid-area: i2;
+        }
+
+        .i-3 {
+            grid-area: i3;
+        }
+
+        .i-4 {
+            grid-area: i4;
+        }
+
+        .i-5 {
+            grid-area: i5;
+        }
+
+        .i-6 {
+            grid-area: i6;
+        }
+
+        .i-7 {
+            grid-area: i7;
+        }
+
+        .i-8 {
+            grid-area: i8;
+        }
+
+        #forme {
+            grid-area: form;
+            height: 136vw;
+            width: 85.5vw;
+            margin-right: 6.1vw !important;
+            margin-top: 2vh !important;
+
+            h3 {
+                text-align: center !important;
+                padding: 4vw 5vw 2vw !important;
+                font: $h3TextMobile;
+            }
+
+            h4 {
+                padding-bottom: 2vh !important;
+                padding-right: 2vw !important;
+                width: 95%;
+            }
+
+            #form {
+                // margin-right: 2.5vh !important;
+                padding-right: 4vw !important;
+                width: 95%;
+                display: block;
+
+                input {
+                    width: 100%;
+                }
+
+                input[type="submit"] {
+                    margin-top: 1.5rem !important;
+                }
+            }
+        }
+
+        .i-9 {
+            grid-area: i9;
+        }
+
+        .i-10 {
+            grid-area: i10;
+        }
+
+        .i-11 {
+            grid-area: i11;
+        }
+
+        .i-12 {
+            grid-area: i12;
+        }
+
+        .i-13 {
+            grid-area: i13;
+        }
+
+        .i-14 {
+            grid-area: i14;
+        }
+
+        .odd {
+            margin-left: 0.5vh !important;
+        }
+
+        .even {
+            margin-right: 3.5vh !important;
+        }
+    }
+}

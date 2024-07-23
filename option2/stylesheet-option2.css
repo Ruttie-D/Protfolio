@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(41, 30, 245);
+    background: transparent linear-gradient(180deg, #281EFF 0%, #2DFF8C 100%) 0% 0% no-repeat padding-box;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    margin: 0 auto;
+    width: 65vw;
+    height: 60vh;
+    color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+h1 {
+    /* box-sizing: border-box; */
+    text-align: center;
+    font: normal normal normal 10rem Satisfy;
+    text-shadow: 0px 0px 2rem #00000087;
+    margin: 0 auto;
+    /* padding-left: 5vw; */
+}
+
+h3 {
+    font: normal normal normal 2rem Varela Round;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+p {
+    text-align: center;
+    direction: rtl;
+    font: normal normal normal 1rem Varela Round;
+    padding-bottom: 1rem;
+    color: #F9F9F9;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    /* width: 3 0vw; */
+    text-align: center;
+    direction: rtl;
+    margin: 10px;
+    font-size: 14px;
+}
+
+.flex-it {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+label {
+    font: normal normal normal 1rem Varela Round;
+    padding-right: 0.7rem;
+    color: #F9F9F9;
+    /* width: 70px; */
+}
+
+input {
+    line-height: 2.5;
+    margin: 0 10px;
+    background: #F6F6F624 0% 0% no-repeat padding-box;
+    border: 2px solid #FFFFFF;
+    width: 26rem;
+}
+
+#sendBtn {
+    background: #FFFFFF;
+    width: 13rem;
+    height: 2.3rem;
+    color: #1C1C1C;
+    font: normal normal normal 1rem Varela Round;
+    text-align: center;
+    padding: 0 1rem;
+    /* line-height: 1; */
+}
+
+@media(max-width: 576px) {
+    body {
+        width: 90vw;
+        height: 100vh;
+    }
+
+    .container {
+        clear: both;
+        width: 70vw;
+        height: 70vh;
+    }
+
+    h1 {
+        margin-left: 0;
+        padding-left: 0;
+        margin: 5vh auto;
+        font: normal normal normal 4rem Satisfy;
+    }
+
+    h3 {
+        font: normal normal normal 1.2rem Varela Round;
+    }
+
+    p {
+        font: normal normal normal 1rem Varela Round;
+    }
+
+    form {
+        text-align: justify;
+        /* align-items: center; */
+        /* width: 55vw; */
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: start;
+        margin-top: 8vh;
+    }
+
+    .flex-it {
+        margin-bottom: 3vh;
+    }
+
+    label {
+        margin-bottom: 0;
+    }
+
+    input {
+        text-align: justify;
+        margin: 0 auto;
+        width: 70vw;
+        margin: 0 2vw;
+    }
+
+    #sendBtn {
+        margin: 2vw auto;
+        padding: 0 !important;
+        height: 2rem;
+        font: normal normal normal 0.9rem Varela Round;
+        color: #2823FD;
+    }
+}

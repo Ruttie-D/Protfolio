@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/trivia.css">
+    <!-- JS -->
+    <script async defer type="module" src="./js/trivia.js"></script>
+    <!-- Fonts Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <!-- Icon Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="quiz-container">
+        <div class="start">
+            <div class="trivia-type">
+                <h2>The Trivia Type You'll Like To Play</h2>
+                <div class="choices">
+                    <button class="type">Multiple Choice</button>
+                    <button class="type">True / False</button>
+                </div>
+            </div>
+            <div class="trivia-difficulty">
+                <h2>Game Level</h2>
+                <div class="choices">
+                    <button class="level">Easy</button>
+                    <button class="level">Medium</button>
+                    <button class="level">Hard</button>
+                </div>
+            </div>
+        </div>
+        <div class="game hidden">
+            <div class="question-container">
+                <h1>Where The Questions Will Be Displayed</h1>
+                <div class="restart hidden">
+                    <i class="fa fa-refresh fa-2xl" style="color: #ab346f; --fa-secondary-color: #ab346f;"></i>
+                </div>
+            </div>
+
+            <div class="answers-container">
+
+                <div class="multi-answer">
+                    <button class="btn options">Some Answers</button>
+                    <button class="btn options">Some Answers</button>
+                    <button class="btn options">Some Answers</button>
+                    <button class="btn options">Some Answers</button>
+                </div>
+                <div class="binary-choice">
+                    <button id="true" class="binary">True</button>
+                    <button id="false" class="binary">False</button>
+                </div>
+                <button class="next">Next</button>
+            </div>
+        </div>
+        <div class="counter hidden">
+            0/10
+        </div>
+    </div>
+</body>
+
+</html>

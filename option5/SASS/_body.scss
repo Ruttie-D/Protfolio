@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $bgc;
+
+    #super-container {
+        width: 60vw;
+        margin: 20vh 20vw;
+        direction: rtl;
+        display: grid;
+        // grid-template-columns: repeat(4, 1fr);
+        // grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:
+            "ad ad i1 i2"
+            "ad ad i3 i4"
+            "i8 i7 i6 i5"
+            "i9 i10 form form"
+            "i11 i12 form form"
+            "i13 i14 form form"
+        ;
+        gap: 1.5vw;
+
+        #ad-container {
+            background-color: $adBgc;
+            // grid-row: 1/3;
+            // grid-column: 1/3;
+            grid-area: ad;
+
+            padding-top: 20vh;
+
+            h1 {
+                color: $turquoise;
+                font: $h1Text;
+                text-align: center;
+            }
+
+            h4 {
+                color: $h4Color;
+                font: $h4Text;
+                text-align: center;
+            }
+        }
+
+        .img-container {
+            width: 15vw;
+            height: 14vw;
+
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .i-1 {
+            grid-area: i1;
+        }
+
+        .i-2 {
+            grid-area: i2;
+        }
+
+        .i-3 {
+            grid-area: i3;
+        }
+
+        .i-4 {
+            grid-area: i4;
+        }
+
+        .i-5 {
+            grid-area: i5;
+        }
+
+        .i-6 {
+            grid-area: i6;
+        }
+
+        .i-7 {
+            grid-area: i7;
+        }
+
+        .i-8 {
+            grid-area: i8;
+        }
+
+        #forme {
+            grid-area: form;
+        }
+
+        .i-9 {
+            grid-area: i9;
+        }
+
+        .i-10 {
+            grid-area: i10;
+        }
+
+        .i-11 {
+            grid-area: i11;
+        }
+
+        .i-12 {
+            grid-area: i12;
+        }
+
+        .i-13 {
+            grid-area: i13;
+        }
+
+        .i-14 {
+            grid-area: i14;
+        }
+    }
+}

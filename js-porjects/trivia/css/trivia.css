@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ab346f;
+    font-family: Nunito;
+    /* align-items: center; */
+    /* text-align: center; */
+}
+
+.hidden {
+    display: none !important;
+}
+
+.clicked {
+    /* background: #000; */
+    color: #ab346f;
+    border: 2px solid #ab346f !important;
+}
+
+.correct {
+    background-color: #14a44d;
+}
+
+.incorrect {
+    background-color: #dc3545;
+}
+
+.quiz-container {
+    margin: 0 auto;
+    margin-top: 8vh;
+    background-color: #f7f7f7;
+    width: 45vw;
+    height: 85vh;
+    border: 1px solid #f7f7f7;
+    border-radius: 0.8vw;
+}
+
+.quiz-container .start {
+    text-align: center;
+    height: 60vh;
+    width: 35vw;
+    margin: 8vh auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.quiz-container .start h2 {
+    font-size: 2.2rem;
+}
+
+.quiz-container .start .trivia-type .choices,
+.quiz-container .start .trivia-difficulty .choices {
+    margin: 2vh 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 3.5vw;
+}
+
+.quiz-container .start .trivia-type .choices .type,
+.quiz-container .start .trivia-difficulty .choices .level {
+    cursor: pointer;
+    margin: 5vh auto;
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 20vw;
+    line-height: 2.5;
+    border: 2px solid #000;
+    border-radius: 0.5vw;
+    transition: all 0.4s;
+}
+
+.quiz-container .start .trivia-difficulty .choices .level {
+    padding: 0 1vw;
+}
+
+.question-container {
+    margin: 0 auto;
+    padding-top: 6vh;
+    padding-bottom: 5vh;
+    height: 10vh;
+    width: 42vw;
+    text-align: center;
+}
+
+.question-container h1 {
+    word-wrap: break-word;
+    width: 42vw;
+    height: 10vh;
+    font-size: 1.8em;
+}
+
+.question-container .restart {
+    width: 10vw;
+    height: 5vh;
+    margin: 15vh auto 0;
+}
+
+.question-container .restart .fa {
+    font-size: 3.5em;
+    cursor: pointer;
+}
+
+.answers-container {
+    margin: 32vh auto 0;
+    height: 45vh;
+    width: 35vw;
+    text-align: center;
+}
+
+.multi-answer {
+    height: 35vh;
+    margin: 0 auto -9vh;
+    text-align: center;
+    font-size: 1 rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.options {
+    font-size: 1.3rem;
+    width: 35vw;
+    border: 2px solid #000;
+    border-radius: 0.5vw;
+    line-height: 1.6;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+
+.binary-choice {
+    height: 25vh;
+    margin: 30vh auto 0;
+    text-align: center;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 5vw;
+}
+
+.binary {
+    cursor: pointer;
+    margin: 13vh auto -2vh;
+    font-size: 2rem;
+    width: 20vw;
+    line-height: 1;
+    border: 2px solid #000;
+    border-radius: 0.5vw;
+    transition: all 0.4s;
+}
+
+.binary:hover, .options:hover, .type:hover, .level:hover {
+    background: #000;
+    color: #f7f7f7;
+}
+
+.next {
+    margin-top: 2rem;
+    background: #000;
+    font-weight: 800;
+    color: #f7f7f7;
+    width: 10vw;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    border: 1px solid #000;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.next:hover {
+    background-color: #f7f7f7;
+    color: #000;
+}
+
+.counter {
+    width: 5vw;
+    position: fixed;
+    bottom: 10vh;
+    right: 47.3vw;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .quiz-container {
+        width: 95vw;
+        height: 92vh;
+        margin-top: 5vh;
+    }
+
+    .quiz-container .start {
+        width: 90vw;
+        height: 90vh;
+        margin-top: 5vh;
+    }
+
+    .quiz-container .start .trivia-difficulty .choices {
+        flex-direction: column;
+        gap: 0;
+        height: 10vh;
+    }
+
+    .quiz-container .start .trivia-type .choices .type,
+    .quiz-container .start .trivia-difficulty .choices .level {
+        cursor: pointer;
+        margin: 2vh auto;
+        font-size: 1.2rem;
+        font-weight: 600;
+        width: 30vw;
+        line-height: 2.5;
+        border: 2px solid #000;
+        border-radius: 1vw;
+        transition: all 0.4s;
+    }
+
+    .quiz-container .start .trivia-type .choices .type {
+        padding: 0 2vw;
+    }
+
+    .answers-container {
+        margin-top: 5vh;
+    }
+}

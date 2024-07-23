@@ -1,0 +1,69 @@
+#forme {
+    grid-column: 3/5;
+    grid-row: 4/7;
+    background-color: $formBgc;
+    margin-left: -0.325vw;
+    height: 45vw;
+
+    h3 {
+        font: $h3Text;
+        color: $white;
+        text-align: center;
+        padding-top: 8vh;
+    }
+
+    h4 {
+        font: $h4Text;
+        color: $h4Color;
+        text-align: center;
+        padding: 2vh 5vw;
+    }
+
+    #form {
+        // border: 1px solid #000;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        direction: rtl;
+        justify-content: center;
+        margin: 3vh auto;
+        align-items: flex-end;
+        // justify-content: space-around;
+
+        .form-control {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto 2vh;
+
+            label {
+                font: $labelText;
+                color: $turquoise;
+                padding-bottom: 1vh;
+            }
+
+            input[type="text"],
+            input[type="email"] {
+                background-color: $bgc;
+                border: 0;
+                border-bottom: 0.25rem solid $turquoise;
+                width: 25.5vw;
+                line-height: 3;
+            }
+
+            #story {
+                line-height: 10;
+            }
+
+            input[type="submit"] {
+                font: $btnText;
+                letter-spacing: $btnLetterSpacing;
+                background-color: $turquoise;
+                color: $darkBlue;
+                line-height: 2;
+                border: 0;
+                width: 25.5vw;
+                margin-top: 1vh;
+            }
+        }
+    }
+}

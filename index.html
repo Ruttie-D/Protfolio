@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Tab Icon -->
+    <link rel="icon" href="./index/home-bg.jpg">
+
+    <link rel="stylesheet" href="./main.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Fonts Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Fonts Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+
+    <script type="module" src="./app.js" async defer></script>
+
+</head>
+
+<body>
+    <header id="header" class="fixed-top bg-white">
+        <div class="container d-flex align-items-center justify-content-between">
+            <h4>Ruttie Yehuda</h4>
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                    <li><a class="nav-link scrollto" href="#about">About</a></li>
+                    <li><a class="nav-link  scrollto" href="#portfolio">Portfolio</a></li>
+                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                </ul>
+                <!-- hamburger -->
+                <i class="bi bi-list mobile-nav-toggle hamburger" id="hamburger"></i>
+            </nav><!-- .navbar -->
+
+        </div>
+    </header>
+
+    <div id="hero" class="home mt-5">
+
+        <div class="container h-100 parent">
+            <div class="hero-content h-50">
+                <h1 class="p-3">I'm
+                    <span class="typed"
+                        data-typed-items="Java Coder, FullStack Programmer ,Web Developer, Web Designer, Maker">
+                    </span>
+                </h1>
+                <p class="p-3 mb-5">Java Coder, FullStack Programmer, Web Developer, Web Designer, Maker</p>
+
+                <!-- social-media links -->
+                <ul id="media-icons-container"
+                    class="list-unstyled list-social d-flex flex-direction-row justify-content-around mx-4">
+                    <li class="media-link rounded-circle py-1 px-2 mx-2">
+                        <!-- whatsapp -->
+                        <a href="https://wa.me/549148915?text=Hi+there!+I+found+your+profile+and+I'm+interested+in+learning+more+about+your+programming+experience.+Would+you+be+open+to+chatting+about+potential opportunities?"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-whatsapp text-white"></i>
+                        </a>
+                    </li>
+
+                    <li class="media-link rounded-circle py-1 px-2 mx-2">
+                        <!-- email -->
+                        <a href="mailto:ruthye234@gmail.com" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-envelope-at text-white"></i>
+                        </a>
+                    </li>
+
+                    <li class="media-link rounded-circle py-1 px-2 mx-2">
+                        <!-- gitHub -->
+                        <a href="#">
+                            <i class="bi bi-github text-white"></i>
+                        </a>
+                    </li>
+
+                    <li class="media-link rounded-circle py-1 px-2 mx-2">
+                        <!-- linkedin -->
+                        <a href="#">
+                            <i class="bi bi-linkedin text-white"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <main id="main">
+        <!-- about -->
+        <div id="about" class="paddsection">
+            <div class="container">
+                <div class="row justify-content-between">
+
+                    <div class="col-lg-4 ">
+                        <!-- <div class="div-img-bg"> -->
+                        <!-- <div class="about-img"> -->
+                        <!-- <img src="#" class="img-responsive" alt="me"> -->
+                        <!-- </div> -->
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="about-descr">
+
+                        <p class="p-heading">I'm a FullStack Developer who loves clean, simple & unique
+                            design. I
+                            also
+                            enjoy crafting brand new websites, icons, & applications. </p>
+                        <p class="separator">To an outside observer, it will seem like simplified English,
+                            occidental even. The goal is: Don't let them see the hard work...</p>
+                    </div>
+                </div>
+                <!-- Download CV-->
+                <div class="ml-3 mt-5">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-black">
+                        Download My CV
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div><!-- End About Section -->
+
+        <!-- services -->
+        <div id="services">
+            <div class="container">
+
+                <div class="services-slider swiper d-md-flex flex-md-row justify-content-md-between" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div id="design" class="swiper-wrapper d-flex flex-column">
+
+                        <div class="swiper-slide">
+                            <div class="services-block d-flex flex-direction-row align-items-center">
+                                <i class="fa-brands fa-html5 fa-2xl" style="color: #ff4922;"></i>
+                                <span class="pl-4">&nbsp;HTML</span>
+                            </div>
+                            <p class="separator">Web Structure and Built</p>
+                        </div> <!-- End HTML Section-->
+
+                        <div class="swiper-slide">
+                            <div class="services-block d-flex flex-direction-row align-items-center">
+                                <i class="fa-brands fa-css3-alt fa-2xl" style="color: #0083de;"></i>
+                                <span class="pl-4">&nbsp;CSS</span>
+                            </div>
+                            <p class="separator">Style and Look</p>
+                        </div> <!-- End CSS Section-->
+
+                        <div class="swiper-slide">
+                            <div class="services-block d-flex flex-direction-row align-items-center">
+                                <i class="fa-brands fa-sass fa-2xl" style="color: #e77ead;"></i>
+                                <span class="pl-3">SASS</span>
+                            </div>
+                            <p class="separator">Syntactically Awesome Way To Style</p>
+                        </div> <!-- End SASS Section-->
+
+                        <div class="swiper-slide">
+                            <div class="services-block d-flex flex-direction-row align-items-center">
+                                <i class="fa-brands fa-bootstrap fa-2xl" style="color: #8611f7;"></i>
+                                <span class="pl-3">Bootstrap</span>
+                            </div>
+                            <p class="separator">Way To Cut Down Code...</p>
+                        </div> <!-- End Bootstrap Section-->
+
+                    </div>
+
+                    <div id="programing" class="swiper-wrapper d-flex flex-column">
+
+                        <div class="swiper-slide">
+                            <div class="services-block d-flex flex-direction-row align-items-center">
+                                <i class="fa-brands fa-js fa-2xl" style="color: #efd81d;"></i>
+                                <span class="pl-3">&nbsp;JavaScript</span>
+                            </div>
+                            <p class="separator">While(Lively, Interactive and Dynamic)</p>
+                        </div> <!-- End JavaScript Section-->
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+
+        </div><!-- End Services Section -->
+
+        <div id="portfolio" class="paddsection">
+
+            <div class="container">
+                <div class="section-title text-center">
+                    <h2>My Portfolio</h2>
+                </div>
+            </div>
+
+            <div class="container">
+                <!-- top -->
+                <div class="row">
+                    <div class="col-lg-12 d-flex justify-content-center">
+                        <ul id="portfolio-flters">
+                            <li class="portfolio-item filter-active">All</li>
+                            <li class="filter-html-css">HTML & CSS</li>
+                            <li class="filter-sass">SASS</li>
+                            <li class="filter-bootstrap">Bootstrap</li>
+                            <li class="filter-javascript">JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row portfolio-container">
+                    <!-- option 1 -->
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-bootstrap">
+                        <img src="./index/portfolio-1.png" class="img-fluid" alt="option 1 preview">
+                        <div class="portfolio-info d-flex flex-row justify-content-between">
+                            <div class="d-flex flex-column align-content-end">
+                                <h4>Option 1</h4>
+                                <p>HTML & CSS, Bootstrap</p>
+                            </div>
+                            <div id="portfolio-links" class="p-3">
+                                <a href="./preview/option1_preview.html" target="_blank" rel="noopener noreferrer"
+                                    data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"
+                                    title="HTML & CSS">
+                                    <i class="fa-solid fa-plus p-2 fa-lg" style="color: #74C0FC;"></i>
+                                </a>
+                                <a href="./option1/option1.html" target="_blank" rel="noopener noreferrer"
+                                    class="details-link" title="More Details">
+                                    <i class="fa-solid fa-link p-2 fa-lg" style="color: #74C0FC;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- option 2 -->
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-html-css">
+                        <img src="./index/portfolio-2.png" class="img-fluid" alt="option 2 preview">
+                        <div class="portfolio-info  d-flex flex-row justify-content-between">
+                            <div class="d-flex flex-column align-content-end">
+                                <h4>Option 2</h4>
+                                <p>HTML & CSS</p>
+                            </div>
+                            <div id="portfolio-links" class="p-3">
+                                <a href="./preview/option2_preview.html" target="_blank" rel="noopener noreferrer"
+                                    data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"
+                                    title="HTML & CSS">
+                                    <i class="fa-solid fa-plus p-2 fa-lg" style="color: #74C0FC;"></i>
+                                </a>
+                                <a href="./option2/option2.html" target="_blank" rel="noopener noreferrer"
+                                    class="details-link" title="More Details">
+                                    <i class="fa-solid fa-link p-2 fa-lg" style="color: #74C0FC;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- option 3 -->
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-html-css">
+                        <img src="./index/portfolio-3.png" class="img-fluid" alt="option 3 preview">
+                        <div class="portfolio-info  d-flex flex-row justify-content-between">
+                            <div class="d-flex flex-column align-content-end">
+                                <h4>Option 3</h4>
+                                <p>HTML & CSS</p>
+                            </div>
+                            <div id="portfolio-links" class="p-3">
+                                <a href="./preview/option3_preview.html" target="_blank" rel="noopener noreferrer"
+                                    data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"
+                                    title="HTML & CSS">
+                                    <i class="fa-solid fa-plus p-2 fa-lg" style="color: #74C0FC;"></i>
+                                </a>
+                                <a href="./option3/option3.html" target="_blank" rel="noopener noreferrer"
+                                    class="details-link" title="More Details">
+                                    <i class="fa-solid fa-link p-2 fa-lg" style="color: #74C0FC;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- option 4 -->
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-sass">
+                        <img src="./index/portfolio-4.png" class="img-fluid" alt="option 4 preview">
+                        <div class="portfolio-info  d-flex flex-row justify-content-between">
+                            <div class="d-flex flex-column align-content-end">
+                                <h4>Option 4</h4>
+                                <p>HTML & CSS, SASS</p>
+                            </div>
+                            <div id="portfolio-links" class="p-3">
+                                <a href="./preview/option4_preview.html" target="_blank" rel="noopener noreferrer"
+                                    data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"
+                                    title="HTML & CSS, SASS">
+                                    <i class="fa-solid fa-plus p-2 fa-lg" style="color: #74C0FC;"></i>
+                                </a>
+                                <a href="./option4/option4.html" target="_blank" rel="noopener noreferrer"
+                                    class="details-link" title="More Details">
+                                    <i class="fa-solid fa-link p-2 fa-lg" style="color: #74C0FC;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- option 5 -->
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-sass">
+                        <img src="./index/portfolio-5.png" class="img-fluid" alt="option 5 preview">
+                        <div class="portfolio-info  d-flex flex-row justify-content-between">
+                            <div class="d-flex flex-column align-content-end">
+                                <h4>Option 5</h4>
+                                <p>HTML & CSS, SASS</p>
+                            </div>
+                            <div id="portfolio-links" class="p-3">
+                                <a href="./preview/option5_preview.html" target="_blank" rel="noopener noreferrer"
+                                    data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"
+                                    title="HTML & CSS, SASS">
+                                    <i class="fa-solid fa-plus p-2 fa-lg" style="color: #74C0FC;"></i>
+                                </a>
+                                <a href="./option5/option5.html" target="_blank" rel="noopener noreferrer"
+                                    class="details-link" title="More Details">
+                                    <i class="fa-solid fa-link p-2 fa-lg" style="color: #74C0FC;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- option 7 -->
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-bootstrap">
+                        <img src="./index/portfolio-7.png" class="img-fluid" alt="option 7 preview">
+                        <div class="portfolio-info  d-flex flex-row justify-content-between">
+                            <div class="d-flex flex-column align-content-end">
+                                <h4>Option 7</h4>
+                                <p>HTML & CSS, Bootstrap</p>
+                            </div>
+                            <div id="portfolio-links" class="p-3">
+                                <a href="./preview/option7_preview.html" target="_blank" rel="noopener noreferrer"
+                                    data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"
+                                    title="HTML & CSS, Bootstrap">
+                                    <i class="fa-solid fa-plus p-2 fa-lg" style="color: #74C0FC;"></i>
+                                </a>
+                                <a href="./option7/option7.html" target="_blank" rel="noopener noreferrer"
+                                    class="details-link" title="More Details">
+                                    <i class="fa-solid fa-link p-2 fa-lg" style="color: #74C0FC;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Trivia-Game -->
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-javascript">
+                        <img src="./index/trivia.png" class="img-fluid" alt="trivia game preview">
+                        <div class="portfolio-info  d-flex flex-row justify-content-between">
+                            <div class="d-flex flex-column align-content-end">
+                                <h4>Trivia Game</h4>
+                                <p>JavaScript</p>
+                            </div>
+                            <div id="portfolio-links" class="p-3">
+                                <a href="./js-porjects/trivia/README.txt" target="_blank" rel="noopener noreferrer"
+                                    data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"
+                                    title="JavaScript">
+                                    <i class="fa-solid fa-plus p-2 fa-lg" style="color: #74C0FC;"></i>
+                                </a>
+                                <a href="./js-porjects/trivia/trivia.html" target="_blank" rel="noopener noreferrer"
+                                    class="details-link" title="More Details">
+                                    <i class="fa-solid fa-link p-2 fa-lg" style="color: #74C0FC;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Snake-Game -->
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-javascript">
+                        <img src="./index/snake.png" class="img-fluid" alt="snake game preview">
+                        <div class="portfolio-info  d-flex flex-row justify-content-between">
+                            <div class="d-flex flex-column align-content-end">
+                                <h4>Snake Game</h4>
+                                <p>JavaScript</p>
+                            </div>
+                            <div id="portfolio-links" class="p-3">
+                                <a href="./js-porjects/snake/README.txt" target="_blank" rel="noopener noreferrer"
+                                    data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"
+                                    title="JavaScript">
+                                    <i class="fa-solid fa-plus p-2 fa-lg" style="color: #74C0FC;"></i>
+                                </a>
+                                <a href="./js-porjects/snake/snake.html" target="_blank" rel="noopener noreferrer"
+                                    class="details-link" title="More Details">
+                                    <i class="fa-solid fa-link p-2 fa-lg" style="color: #74C0FC;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Expenses -->
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-javascript">
+                        <img src="./index/expenses.png" class="img-fluid" alt="expenses preview">
+                        <div class="portfolio-info  d-flex flex-row justify-content-between">
+                            <div class="d-flex flex-column align-content-end">
+                                <h4>Expenses</h4>
+                                <p>JavaScript</p>
+                            </div>
+                            <div id="portfolio-links" class="p-3">
+                                <a href="./js-porjects/expenses/README.txt" target="_blank" rel="noopener noreferrer"
+                                    data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"
+                                    title="JavaScript">
+                                    <i class="fa-solid fa-plus p-2 fa-lg" style="color: #74C0FC;"></i>
+                                </a>
+                                <a href="./js-porjects/expenses/expenses.html" target="_blank" rel="noopener noreferrer"
+                                    class="details-link" title="More Details">
+                                    <i class="fa-solid fa-link p-2 fa-lg" style="color: #74C0FC;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Countries -->
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-javascript">
+                        <img src="./index/countries.png" class="img-fluid" alt="countries preview">
+                        <div class="portfolio-info  d-flex flex-row justify-content-between">
+                            <div class="d-flex flex-column align-content-end">
+                                <h4>Countries</h4>
+                                <p>JavaScript</p>
+                            </div>
+                            <div id="portfolio-links" class="p-3">
+                                <a href="./js-porjects/countries/README.txt" target="_blank" rel="noopener noreferrer"
+                                    data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"
+                                    title="JavaScript">
+                                    <i class="fa-solid fa-plus p-2 fa-lg" style="color: #74C0FC;"></i>
+                                </a>
+                                <a href="./js-porjects/countries/countries.html" target="_blank"
+                                    rel="noopener noreferrer" class="details-link" title="More Details">
+                                    <i class="fa-solid fa-link p-2 fa-lg" style="color: #74C0FC;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Chess -->
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-javascript">
+                        <img src="./index/chess.png" class="img-fluid" alt="chess game preview">
+                        <div class="portfolio-info  d-flex flex-row justify-content-between">
+                            <div class="d-flex flex-column align-content-end">
+                                <h4>Chess</h4>
+                                <p>JavaScript</p>
+                            </div>
+                            <div id="portfolio-links" class="p-3">
+                                <a href="./js-porjects/chess/README.txt" target="_blank" rel="noopener noreferrer"
+                                    data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"
+                                    title="JavaScript">
+                                    <i class="fa-solid fa-plus p-2 fa-lg" style="color: #74C0FC;"></i>
+                                </a>
+                                <a href="./js-porjects/chess/chess.html" target="_blank" rel="noopener noreferrer"
+                                    class="details-link" title="More Details">
+                                    <i class="fa-solid fa-link p-2 fa-lg" style="color: #74C0FC;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Calendar -->
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-javascript">
+                        <img src="./index/calendar.png" class="img-fluid" alt="calendar preview">
+                        <div class="portfolio-info  d-flex flex-row justify-content-between">
+                            <div class="d-flex flex-column align-content-end">
+                                <h4>Calendar</h4>
+                                <p>JavaScript</p>
+                            </div>
+                            <div id="portfolio-links" class="p-3">
+                                <a href="./js-porjects/calendar/README.txt" target="_blank" rel="noopener noreferrer"
+                                    data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"
+                                    title="JavaScript">
+                                    <i class="fa-solid fa-plus p-2 fa-lg" style="color: #74C0FC;"></i>
+                                </a>
+                                <a href="./js-porjects/calendar/calendar.html" target="_blank" rel="noopener noreferrer"
+                                    class="details-link" title="More Details">
+                                    <i class="fa-solid fa-link p-2 fa-lg" style="color: #74C0FC;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- End Portfolio Section -->
+
+        <div id="contact" class="paddsection">
+            <div class="container">
+                <div class="contact-block1">
+                    <div class="row">
+
+                        <div class="col-lg-6">
+                            <div class="contact-contact">
+
+                                <h2 class="mb-30">GET IN TOUCH</h2>
+
+                                <ul class="contact-details mb-5">
+                                    <li><span>12 Nachal Hakison Street</span></li>
+                                    <li><span>Beit Shemesh, Israel</span></li>
+                                    <li><span>+972 54-914-8915</span></li>
+                                    <li><span>ruthye234@gmail.com</span></li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <form role="form" class="php-email-form">
+                                <div class="row gy-3">
+
+                                    <div class="col-lg-6">
+                                        <div class="form-group contact-block1">
+                                            <input type="text" name="name" class="form-control" id="name"
+                                                placeholder="Your Name" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" name="email" id="email"
+                                                placeholder="Your Email" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="subject" id="subject"
+                                                placeholder="Subject" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <textarea class="form-control" name="message" placeholder="Message"
+                                                required></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="mt-0">
+                                        <input type="submit" class="btn btn-defeault btn-send" value="Send message">
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- End Contact Section -->
+    </main>
+
+    <div id="footer" class="text-center">
+        <div class="container">
+            <div class="socials-media text-center w-25  mx-auto">
+
+                <ul class="list-unstyled d-flex flex-direction-row justify-content-around">
+                    <li>
+                        <!-- whatsapp -->
+                        <a href="https://wa.me/549148915?text=Hi+there!+I+found+your+profile+and+I'm+interested+in+learning+more+about+your+programming+experience.+Would+you+be+open+to+chatting+about+potential opportunities?"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <!-- email -->
+                        <a href="mailto:ruthye234@gmail.com" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-envelope-at"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <!-- gitHub -->
+                        <a href="#">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <!-- linkedin -->
+                        <a href="#">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <p>&copy; Copyrights. All rights reserved.</p>
+        </div>
+    </div>
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
